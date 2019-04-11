@@ -1,0 +1,26 @@
+// first attempt
+
+var todo = ['item 1', 'item 2', 'item 3', 'item 4', 'item 5']
+
+todo.splice(0, 1)
+todo.push('item 1')
+todo.splice(1, 1)
+todo.push('item 2')
+todo.splice(2, 1)
+todo.push('item 3')
+todo.splice(1, 1)
+todo.push('item 4')
+todo.splice(0, 1)
+todo.push('item 5')
+
+
+console.log(todo)
+
+//second attempt
+
+var todo = ['item 1', 'item 2', 'item 3', 'item 4', 'item 5']
+
+todo.splice(0, 5)
+todo.push('item 1', 'item 2', 'item 3', 'item 4', 'item 5')
+
+console.log(todo)
