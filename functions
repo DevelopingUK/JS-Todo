@@ -1,0 +1,51 @@
+var todos = ['item 1', 'item 2', 'item 3']
+
+// It should display a todo
+
+var todos = ['item 1', 'item 2', 'item 3']
+
+function displayTodos() {
+    console.log('My todos:', todos)
+}
+
+displayTodos()
+
+// It should Add a new todo
+
+function addTodo() {
+	todos.push('new todo');
+}
+
+// It should add and display todos
+
+function addTodo() {
+    todos.push('new todo');
+    displayTodos();
+}
+
+// It should add and display todos with a parameter
+
+function addTodo(todo) {
+    todos.push(todo);
+    displayTodos();
+}
+
+// It should change a todo
+
+function changeTodo(position, newValue) {
+	todos[position] = newValue;
+}
+
+// It should change and display todo
+
+function changeTodo(position, newValue) {
+    todos[position] = newValue;
+    displayTodos();
+}
+
+// It should delete todo
+
+function deleteTodo(position) {
+	todos.splice(position, 1);
+	displayTodos();
+}
