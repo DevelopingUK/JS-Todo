@@ -43,7 +43,7 @@ function changeTodo(position, newValue) {
     displayTodos();
 }
 
-// It should delete todo
+// It should delete a todo
 
 function deleteTodo(position) {
 	todos.splice(position, 1);
