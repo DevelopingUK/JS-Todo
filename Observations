@@ -1,0 +1,22 @@
+// I can access myName variable inside my function
+
+var myName = 'Liam';
+
+function sayName() {
+    console.log(myName);
+}
+
+sayName();
+
+
+// I can't access the secret variable from outside of this function.
+
+var myName = 'Liam';
+
+function sayName() {
+    var secret = 'secret word';
+    console.log(myName);
+}
+
+sayName();
+console.log(secret); // Uncaught ReferenceError: secret is not defined
